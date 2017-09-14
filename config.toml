@@ -1,5 +1,26 @@
-baseURL = "http://example.org/"
+title = "Adam B Kaplan"
+baseURL = "http://adambkaplan.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "hugo-sustain"
+theme = "ananke"
 
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 9
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  description = "Testing this new theme"
+  facebook = ""
+  twitter = "https://twitter.com/adambkaplan"
+  instagram = ""
+  youtube = ""
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-silver"
+  featured_image = "/images/mouna_loa_sunset.JPG"
