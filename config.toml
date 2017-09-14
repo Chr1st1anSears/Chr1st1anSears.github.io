@@ -1,4 +1,4 @@
-title = "Adam B Kaplan"
+title = "adambkaplan"
 baseURL = "http://adambkaplan.com/"
 languageCode = "en-us"
 theme = "ananke"
@@ -16,11 +16,11 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 [params]
-  description = "Testing this new theme"
+  description = ""
   facebook = ""
   twitter = "https://twitter.com/adambkaplan"
   instagram = ""
   youtube = ""
+  linkedin = "https://linkedin.com/adambkaplan"
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   background_color_class = "bg-silver"
-  featured_image = "/images/mouna_loa_sunset.JPG"
