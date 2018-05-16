@@ -23,7 +23,7 @@
     <item>
       <title>Development</title>
       <link>http://adambkaplan.com/tags/development/</link>
-      <pubDate>Tue, 26 Sep 2017 22:45:03 -0400</pubDate>
+      <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
       <guid>http://adambkaplan.com/tags/development/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>Github Pages</title>
       <link>http://adambkaplan.com/tags/github-pages/</link>
-      <pubDate>Tue, 26 Sep 2017 22:45:03 -0400</pubDate>
+      <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
       <guid>http://adambkaplan.com/tags/github-pages/</guid>
       <description></description>
@@ -44,6 +44,33 @@
       <pubDate>Tue, 26 Sep 2017 22:45:03 -0400</pubDate>
       
       <guid>http://adambkaplan.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K8s</title>
+      <link>http://adambkaplan.com/tags/k8s/</link>
+      <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
+      
+      <guid>http://adambkaplan.com/tags/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>http://adambkaplan.com/tags/kubernetes/</link>
+      <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
+      
+      <guid>http://adambkaplan.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openshift</title>
+      <link>http://adambkaplan.com/tags/openshift/</link>
+      <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
+      
+      <guid>http://adambkaplan.com/tags/openshift/</guid>
       <description></description>
     </item>
     
