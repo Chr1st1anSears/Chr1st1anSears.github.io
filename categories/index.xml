@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on adambkaplan</title>
-    <link>http://adambkaplan.com/categories/</link>
+    <link>https://adambkaplan.com/categories/</link>
     <description>Recent content in Categories on adambkaplan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://adambkaplan.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://adambkaplan.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Software Dev</title>
-      <link>http://adambkaplan.com/categories/software-dev/</link>
+      <link>https://adambkaplan.com/categories/software-dev/</link>
       <pubDate>Tue, 26 Sep 2017 22:45:03 -0400</pubDate>
       
-      <guid>http://adambkaplan.com/categories/software-dev/</guid>
+      <guid>https://adambkaplan.com/categories/software-dev/</guid>
       <description></description>
     </item>
     

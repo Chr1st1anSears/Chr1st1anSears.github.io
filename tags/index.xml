@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on adambkaplan</title>
-    <link>http://adambkaplan.com/tags/</link>
+    <link>https://adambkaplan.com/tags/</link>
     <description>Recent content in Tags on adambkaplan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Sep 2017 22:45:03 -0400</lastBuildDate>
     
-	<atom:link href="http://adambkaplan.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://adambkaplan.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Aws</title>
-      <link>http://adambkaplan.com/tags/aws/</link>
+      <link>https://adambkaplan.com/tags/aws/</link>
       <pubDate>Tue, 26 Sep 2017 22:45:03 -0400</pubDate>
       
-      <guid>http://adambkaplan.com/tags/aws/</guid>
+      <guid>https://adambkaplan.com/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>http://adambkaplan.com/tags/development/</link>
+      <link>https://adambkaplan.com/tags/development/</link>
       <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
-      <guid>http://adambkaplan.com/tags/development/</guid>
+      <guid>https://adambkaplan.com/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github Pages</title>
-      <link>http://adambkaplan.com/tags/github-pages/</link>
+      <link>https://adambkaplan.com/tags/github-pages/</link>
       <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
-      <guid>http://adambkaplan.com/tags/github-pages/</guid>
+      <guid>https://adambkaplan.com/tags/github-pages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>http://adambkaplan.com/tags/hugo/</link>
+      <link>https://adambkaplan.com/tags/hugo/</link>
       <pubDate>Tue, 26 Sep 2017 22:45:03 -0400</pubDate>
       
-      <guid>http://adambkaplan.com/tags/hugo/</guid>
+      <guid>https://adambkaplan.com/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>K8s</title>
-      <link>http://adambkaplan.com/tags/k8s/</link>
+      <link>https://adambkaplan.com/tags/k8s/</link>
       <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
-      <guid>http://adambkaplan.com/tags/k8s/</guid>
+      <guid>https://adambkaplan.com/tags/k8s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>http://adambkaplan.com/tags/kubernetes/</link>
+      <link>https://adambkaplan.com/tags/kubernetes/</link>
       <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
-      <guid>http://adambkaplan.com/tags/kubernetes/</guid>
+      <guid>https://adambkaplan.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Openshift</title>
-      <link>http://adambkaplan.com/tags/openshift/</link>
+      <link>https://adambkaplan.com/tags/openshift/</link>
       <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
-      <guid>http://adambkaplan.com/tags/openshift/</guid>
+      <guid>https://adambkaplan.com/tags/openshift/</guid>
       <description></description>
     </item>
     
