@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on adambkaplan</title>
@@ -6,22 +6,40 @@
     <description>Recent content in Tags on adambkaplan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Sep 2017 22:45:03 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2020 20:55:55 -0400</lastBuildDate>
     
 	<atom:link href="https://adambkaplan.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Aws</title>
-      <link>https://adambkaplan.com/tags/aws/</link>
-      <pubDate>Tue, 26 Sep 2017 22:45:03 -0400</pubDate>
+      <title>covid-19</title>
+      <link>https://adambkaplan.com/tags/covid-19/</link>
+      <pubDate>Fri, 11 Sep 2020 20:55:55 -0400</pubDate>
       
-      <guid>https://adambkaplan.com/tags/aws/</guid>
+      <guid>https://adambkaplan.com/tags/covid-19/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Development</title>
+      <title>politics</title>
+      <link>https://adambkaplan.com/tags/politics/</link>
+      <pubDate>Fri, 11 Sep 2020 20:55:55 -0400</pubDate>
+      
+      <guid>https://adambkaplan.com/tags/politics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rant</title>
+      <link>https://adambkaplan.com/tags/rant/</link>
+      <pubDate>Fri, 11 Sep 2020 20:55:55 -0400</pubDate>
+      
+      <guid>https://adambkaplan.com/tags/rant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
       <link>https://adambkaplan.com/tags/development/</link>
       <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
@@ -30,7 +48,7 @@
     </item>
     
     <item>
-      <title>Github Pages</title>
+      <title>github-pages</title>
       <link>https://adambkaplan.com/tags/github-pages/</link>
       <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
@@ -39,16 +57,7 @@
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>https://adambkaplan.com/tags/hugo/</link>
-      <pubDate>Tue, 26 Sep 2017 22:45:03 -0400</pubDate>
-      
-      <guid>https://adambkaplan.com/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>K8s</title>
+      <title>k8s</title>
       <link>https://adambkaplan.com/tags/k8s/</link>
       <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
@@ -57,7 +66,7 @@
     </item>
     
     <item>
-      <title>Kubernetes</title>
+      <title>kubernetes</title>
       <link>https://adambkaplan.com/tags/kubernetes/</link>
       <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
@@ -66,11 +75,38 @@
     </item>
     
     <item>
-      <title>Openshift</title>
+      <title>openshift</title>
       <link>https://adambkaplan.com/tags/openshift/</link>
       <pubDate>Tue, 15 May 2018 16:27:48 -0400</pubDate>
       
       <guid>https://adambkaplan.com/tags/openshift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws</title>
+      <link>https://adambkaplan.com/tags/aws/</link>
+      <pubDate>Tue, 26 Sep 2017 22:45:03 -0400</pubDate>
+      
+      <guid>https://adambkaplan.com/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://adambkaplan.com/tags/hugo/</link>
+      <pubDate>Tue, 26 Sep 2017 22:45:03 -0400</pubDate>
+      
+      <guid>https://adambkaplan.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>9/11</title>
+      <link>https://adambkaplan.com/tags/9/11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://adambkaplan.com/tags/9/11/</guid>
       <description></description>
     </item>
     

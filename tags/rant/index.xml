@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rant on adambkaplan</title>
+    <link>https://adambkaplan.com/tags/rant/</link>
+    <description>Recent content in rant on adambkaplan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Sep 2020 20:55:55 -0400</lastBuildDate>
+    
+	<atom:link href="https://adambkaplan.com/tags/rant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>9/11 Reflections - 19 years later</title>
+      <link>https://adambkaplan.com/post/2020-09-11-reflections/</link>
+      <pubDate>Fri, 11 Sep 2020 20:55:55 -0400</pubDate>
+      
+      <guid>https://adambkaplan.com/post/2020-09-11-reflections/</guid>
+      <description>&lt;p&gt;An older me, looking back to one crisis amidst multiple, present crises.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
