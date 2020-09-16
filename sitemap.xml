@@ -3,21 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://adambkaplan.com/post/2020-09-11-reflections/</loc>
-    <lastmod>2020-09-11T20:55:55-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://adambkaplan.com/</loc>
-    <lastmod>2020-09-11T20:55:55-04:00</lastmod>
+    <lastmod>2020-09-13T21:22:30-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://adambkaplan.com/post/</loc>
+    <lastmod>2020-09-13T21:22:30-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://adambkaplan.com/post/2020-09-13-free-open-source/</loc>
+    <lastmod>2020-09-13T21:22:30-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://adambkaplan.com/post/2020-09-11-reflections/</loc>
     <lastmod>2020-09-11T20:55:55-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

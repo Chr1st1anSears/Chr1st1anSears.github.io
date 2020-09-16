@@ -6,10 +6,20 @@
     <description>Recent content in Adam B Kaplan on adambkaplan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Sep 2020 20:55:55 -0400</lastBuildDate>
+    <copyright>Adam B Kaplan</copyright>
+    <lastBuildDate>Sun, 13 Sep 2020 21:22:30 -0400</lastBuildDate>
     
 	<atom:link href="https://adambkaplan.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Free and Open Source Blog</title>
+      <link>https://adambkaplan.com/post/2020-09-13-free-open-source/</link>
+      <pubDate>Sun, 13 Sep 2020 21:22:30 -0400</pubDate>
+      
+      <guid>https://adambkaplan.com/post/2020-09-13-free-open-source/</guid>
+      <description>&lt;p&gt;The blog is now truly free and open source.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>9/11 Reflections - 19 years later</title>
