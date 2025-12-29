@@ -12,7 +12,7 @@
             --bg-header: #ffffff;       /* Matches your image fade */
             --text-main: #e0e0e0;       /* Soft light grey for readability */
             --text-muted: #a0a0a0;
-            --accent: #c94c4c;          /* A slightly more vibrant red for dark mode */
+            --accent-color: #c94c4c;          /* A slightly more vibrant red for dark mode */
             --font-serif: 'Georgia', 'Times New Roman', serif;
             --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
@@ -57,7 +57,7 @@
             /* We keep the color white for accessibility, 
                though we are removing the HTML text below */
             color: #fff; 
-            margin-bottom: 60px;
+            margin-bottom: 0px;
             background-color: #ffffff; /* Matches the white fade in your image */
         }
 
@@ -135,8 +135,8 @@
             padding: 50px 0;
             font-family: var(--font-sans);
             font-size: 0.9rem;
-            color: var(--secondary-text);
-            border-top: 1px solid #e0e0e0;
+            color: var(--text-muted); /* Changed from undefined secondary-text */
+            border-top: 1px solid #333; /* Darker border for the dark theme */
             margin-top: 50px;
         }
 
@@ -218,7 +218,7 @@
             <a href="mailto:your-email@example.com" title="Email Me"><i class="fas fa-envelope"></i></a>
             <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
-        <p>&copy; 2025 Christian R Sears.</p>
+        <p>&copy; 2025 Christian R Sears</p>
     </footer>
 
 </body>
