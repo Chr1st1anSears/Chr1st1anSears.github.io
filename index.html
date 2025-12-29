@@ -8,24 +8,30 @@
     <style>
         /* --- VARIABLES & RESET --- */
         :root {
-            --bg-color: #fdfbf7; /* Warm paper tone */
-            --text-color: #2c2c2c;
-            --accent-color: #8c3a3a; /* Muted red for emphasis */
-            --link-color: #1a1a1a;
-            --secondary-text: #555;
+            --bg-dark: #151515;         /* Deep, neutral charcoal */
+            --bg-header: #ffffff;       /* Matches your image fade */
+            --text-main: #e0e0e0;       /* Soft light grey for readability */
+            --text-muted: #a0a0a0;
+            --accent: #c94c4c;          /* A slightly more vibrant red for dark mode */
             --font-serif: 'Georgia', 'Times New Roman', serif;
             --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            background-color: var(--bg-dark);
+            color: var(--text-main);
             font-family: var(--font-serif);
-            line-height: 1.6;
+            line-height: 1.8;
+            margin: 0;
         }
-
+        
+        /* The "Bridge" makes the transition from the white photo to the dark body feel intentional */
+        .gradient-bridge {
+            background: linear-gradient(to bottom, var(--bg-header), var(--bg-dark));
+            height: 120px;
+            width: 100%;
+        }
+        
         a { text-decoration: none; color: var(--link-color); transition: 0.3s; border-bottom: 1px solid transparent; }
         a:hover { color: var(--accent-color); border-bottom: 1px solid var(--accent-color); }
 
@@ -75,22 +81,26 @@
         section { margin-bottom: 80px; }
 
         .section-header {
-            font-size: 2rem;
-            border-bottom: 2px solid #e0e0e0;
+            font-size: 1.6rem;
+            color: var(--text-main);
+            text-transform: uppercase;
+            letter-spacing: 4px; /* The "Pop" */
+            border-bottom: 1px solid #333;
             padding-bottom: 15px;
-            margin-bottom: 30px;
-            color: var(--text-color);
+            margin-bottom: 50px;
         }
 
         /* --- CONTENT STYLES --- */
         .novel-block {
-            padding: 10px 0;
+            border-left: 2px solid var(--accent-color);
+            padding-left: 25px;
+            margin-bottom: 40px;
         }
         
         .description {
             font-size: 1.1rem;
             margin-bottom: 20px;
-            color: var(--secondary-text);
+            color: var(--text-muted);
         }
 
         .sample-link {
@@ -113,8 +123,10 @@
         .pub-title {
             font-size: 1.4rem;
             font-weight: bold;
+            color: #ffffff; /* Bright white for emphasis */
             display: block;
             margin-bottom: 8px;
+            border: none;
         }
 
         /* --- FOOTER --- */
@@ -153,61 +165,49 @@
         <h1 style="display: none;">Christian Sears - Welcome to my portfolio</h1>
     </header>
 
+    <div class="gradient-bridge"></div>
+
     <div class="container">
         
         <section id="novel">
             <h2 class="section-header">American Junkie</h2>
-            
             <div class="novel-block">
                 <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                
-                <a href="#" class="sample-link">Chapter One - Chains &rarr;</a>
+                <a href="#" class="sample-link" style="color: var(--accent-color); font-family: var(--font-sans); font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
+                    Chapter One - Chains &rarr;
+                </a>
             </div>
         </section>
 
         <section id="publications">
             <h2 class="section-header">Selected Publications</h2>
-            
-            <ul class="publication-list">
-                
-                <li class="publication-item">
+            <ul class="publication-list" style="list-style: none;">
+                <li class="publication-item" style="margin-bottom: 40px;">
                     <a href="#" class="pub-title">Lesson Learned</a>
-                    <p class="description">
-                        A brief memoir I authored about living as a recovered alcoholic in Russia.
-                    </p>
+                    <p class="description">A brief memoir I authored about living as a recovered alcoholic in Russia.</p>
                 </li>
-
-                <li class="publication-item">
+                <li class="publication-item" style="margin-bottom: 40px;">
                     <a href="#" class="pub-title">"The Russians"</a>
-                    <p class="description">
-                        An op-ed I wrote for the Salt Lake Tribune in the aftermath of Putin's invasion of Ukraine.
-                    </p>
+                    <p class="description">An op-ed I wrote for the Salt Lake Tribune in the aftermath of Putin's invasion of Ukraine.</p>
                 </li>
-
                 <li class="publication-item">
                     <a href="#" class="pub-title">Pros and Cons of Utah Inland Port</a>
-                    <p class="description">
-                        An investigative piece I published about a planned inland port and its environmental impact.
-                    </p>
+                    <p class="description">An investigative piece I published about a planned inland port and its environmental impact.</p>
                 </li>
-
             </ul>
         </section>
 
         <section id="platform">
             <h2 class="section-header">Learning Design</h2>
-            
             <div class="novel-block">
                 <a href="INSERT_LINK_TO_COURSE_HERE" class="pub-title" target="_blank">
                     Build Generative AI Apps with Firebase Genkit
-                    </a>
-
+                </a>
                 <p class="description">
                     As its owner, I am responsible for maintaining the accuracy and functionality of this Google Cloud course.
                 </p>
-                
             </div>
         </section>
 
