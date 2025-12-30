@@ -44,21 +44,19 @@
 
         /* --- HERO HEADER --- */
         header {
-            background-image: url('images/portfolio-image-1.2.png'); 
-            /* 'contain' ensures the whole photo is visible on all devices */
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            /* We change height to 'auto' and use aspect-ratio to keep the image proportions perfect */
+            background-color: #ffffff;
             width: 100%;
-            aspect-ratio: 16 / 9; /* Matches the horizontal orientation of your photo */
-            background-color: #ffffff; 
-            margin-bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin: 0;
+            padding: 0;
+            line-height: 0; /* Prevents tiny gaps at the bottom */
         }
-
+        
+        header img {
+            width: 100%;
+            height: auto;   /* This forces the container to match the photo exactly */
+            display: block;
+        }
+        
         header h1 {
             font-size: 3.5rem;
             font-weight: normal;
@@ -161,7 +159,8 @@
 <body>
 
     <header>
-        <h1 style="display: none;">Christian Sears - Welcome to my portfolio</h1>
+        <img src="images/portfolio-image.png" alt="Christian R Sears - Writing Portfolio">
+        <h1 style="display: none;">Christian Sears - Writing Portfolio</h1>
     </header>
 
     <div class="gradient-bridge"></div>
