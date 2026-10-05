@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian R Sears | Portfolio</title>
+    <link rel="icon" href="live/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* --- VARIABLES & RESET --- */
@@ -13,6 +14,7 @@
             --text-main: #e0e0e0;       /* Soft light grey for readability */
             --text-muted: #a0a0a0;
             --accent-color: #82caff;          /* A slightly more vibrant red for dark mode */
+            --link-color: inherit;
             --font-serif: 'Georgia', 'Times New Roman', serif;
             --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
@@ -55,22 +57,6 @@
             width: 100%;
             height: auto;   /* This forces the container to match the photo exactly */
             display: block;
-        }
-        
-        header h1 {
-            font-size: 3.5rem;
-            font-weight: normal;
-            letter-spacing: 2px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-            margin-bottom: 10px;
-        }
-
-        header .subtitle {
-            font-family: var(--font-sans);
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            opacity: 0.9;
         }
 
         /* --- SECTIONS --- */
@@ -153,7 +139,7 @@
         }
 
         .socials { margin-bottom: 20px; }
-        .socials a { margin: 0 10px; font-size: 1.2rem; color: var(--secondary-text); border: none; }
+        .socials a { margin: 0 10px; font-size: 1.2rem; color: var(--text-muted); border: none; }
         .socials a:hover { color: var(--accent-color); border: none; }
 
     </style>
@@ -161,7 +147,7 @@
 <body>
 
     <header>
-        <img src="images/portfolio-image-1.2.png" alt="Christian R Sears - Writing Portfolio">
+        <img src="live/images/portfolio-image-1.2.png" alt="Christian R Sears - Writing Portfolio">
         <h1 style="display: none;">Christian Sears - Writing Portfolio</h1>
     </header>
 
@@ -175,7 +161,7 @@
                 <p class="description">
                     Do people ever really change? Can a junkie truly recover from addiction? Most “quit lit” stories are just that—stories about quitting, about sobering up. <em>American Junkie</em> goes deeper. It probes the causes and conditions that lie beneath the wreckage of addiction and the promise of sobriety. Through the eyes of Jack Sutherland, readers will see what it takes to mend a shattered soul.
                 </p>
-                <a href="post/Chains-full.pdf" class="sample-link" style="color: var(--accent-color); font-family: var(--font-sans); font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
+                <a href="live/documents/Chains-full.pdf" class="sample-link" style="color: var(--accent-color); font-family: var(--font-sans); font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
                     Chapter One - Chains &rarr;
                 </a>
             </div>
@@ -185,17 +171,17 @@
             <h2 class="section-header">Selected Publications</h2>
             <ul class="publication-list" style="list-style: none;">
                 <li class="publication-item">
-                    <a href="post/Lesson-Learned.pdf" class="pub-title">Lesson learned</a>
+                    <a href="live/documents/Lesson-Learned.pdf" class="pub-title">Lesson learned</a>
                     <p class="pub-meta" style="font-style: italic;">AA Grapevine - May 2022</p>
                     <p class="description">What's it like to live as a sober alcoholic in Russia? For me, it was informative. And revealing.</p>
                 </li>
                 <li class="publication-item">
-                    <a href="post/globe-letter.pdf" class="pub-title">Why fewer men on campus?</a>
+                    <a href="live/documents/globe-letter.pdf" class="pub-title">Why fewer men on campus?</a>
                     <p class="pub-meta" style="font-style: italic;">The Boston Globe - February 6, 2026</p>
                     <p class="description">Combating injustice can have some unintended side effects.</p>
                 </li>
                 <li class="publication-item">
-                    <a href="post/trib-op-ed.pdf" class="pub-title">Don't blame 'the Russians' for Putin's aggression</a>
+                    <a href="live/documents/trib-op-ed.pdf" class="pub-title">Don't blame 'the Russians' for Putin's aggression</a>
                     <p class="pub-meta" style="font-style: italic;">The Salt Lake Tribune - February 24, 2022</p>
                     <p class="description">In the aftermath of Putin's invasion of Ukraine, I felt the need to speak out about the difference between the dictator and his people.</p>
                 </li>
