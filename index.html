@@ -74,7 +74,7 @@
         }
 
         /* --- SECTIONS --- */
-        section { margin-bottom: 80px; }
+        section { margin-bottom: 40px; }
 
         .section-header {
             font-size: 1.6rem;
@@ -83,13 +83,18 @@
             letter-spacing: 4px; /* The "Pop" */
             border-bottom: 1px solid #333;
             padding-bottom: 15px;
-            margin-bottom: 50px;
+            margin-bottom: 15px;
+            margin-top: 0;
         }
 
         /* --- CONTENT STYLES --- */
         .novel-block {
             padding-left: 25px;
-            margin-bottom: 40px;
+            margin-bottom: 0;
+        }
+
+        .novel-block .description:first-child {
+            margin-top: 0;
         }
         
         .description {
@@ -109,10 +114,11 @@
 
         .publication-list {
             list-style: none;
+            margin-top: 0;
         }
 
         .publication-item {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         .pub-title {
@@ -120,8 +126,19 @@
             font-weight: bold;
             color: #ffffff; /* Bright white for emphasis */
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             border: none;
+        }
+
+        .pub-meta {
+            font-style: italic;
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+
+        .publication-item .description {
+            margin-top: 0;
+            margin-bottom: 0;
         }
 
         /* --- FOOTER --- */
@@ -167,12 +184,12 @@
         <section id="publications">
             <h2 class="section-header">Selected Publications</h2>
             <ul class="publication-list" style="list-style: none;">
-                <li class="publication-item" style="margin-bottom: 40px;">
+                <li class="publication-item">
                     <a href="post/Lesson-Learned.pdf" class="pub-title">Lesson learned</a>
                     <p class="pub-meta" style="font-style: italic;">AA Grapevine - May 2022</p>
                     <p class="description">What's it like to live as a sober alcoholic in Russia? For me, it was informative. And revealing.</p>
                 </li>
-                <li class="publication-item" style="margin-bottom: 40px;">
+                <li class="publication-item">
                     <a href="post/globe-letter.pdf" class="pub-title">Why fewer men on campus?</a>
                     <p class="pub-meta" style="font-style: italic;">The Boston Globe - February 6, 2026</p>
                     <p class="description">Combating injustice can have some unintended side effects.</p>
