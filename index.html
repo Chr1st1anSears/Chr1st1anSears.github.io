@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian R Sears | Portfolio</title>
+    <title>Christian R Sears | Developer Advocate</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* --- VARIABLES & RESET --- */
         :root {
             --bg-dark: #151515;         /* Deep, neutral charcoal */
-            --bg-header: #ffffff;       /* Matches your image fade */
             --text-main: #e0e0e0;       /* Soft light grey for readability */
             --text-muted: #a0a0a0;
-            --accent-color: #82caff;          /* A slightly more vibrant red for dark mode */
+            --accent-color: #82caff;
             --link-color: inherit;
             --font-serif: 'Georgia', 'Times New Roman', serif;
             --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -26,7 +25,7 @@
             margin: 0;
         }
         
-        /* The "Bridge" makes the transition from the white photo to the dark body feel intentional */
+        /* The "Bridge" makes the transition from the photo to the dark body feel intentional */
         .gradient-bridge {
             background-color: var(--bg-dark); 
             height: 20px; 
@@ -45,17 +44,54 @@
 
         /* --- HERO HEADER --- */
         header {
-            background-color: #ffffff;
+            position: relative;
             width: 100%;
+            height: clamp(340px, 62vh, 600px);
             margin: 0;
             padding: 0;
-            line-height: 0; /* Prevents tiny gaps at the bottom */
+            overflow: hidden;
         }
         
         header img {
             width: 100%;
-            height: auto;   /* This forces the container to match the photo exactly */
+            height: 100%;
+            object-fit: cover;
+            object-position: center 62%; /* Keeps the hiker and dog in frame */
             display: block;
+        }
+
+        /* Fades the photo into the dark body so the overlaid text stays legible */
+        header::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(21,21,21,0) 40%, rgba(21,21,21,0.75) 80%, var(--bg-dark) 100%);
+        }
+
+        .hero-text {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 20px;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.2rem, 6vw, 3.6rem);
+            line-height: 1.1;
+            color: #ffffff;
+            margin: 0 0 8px 0;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+        }
+
+        .hero-text .subtitle {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: clamp(0.8rem, 2vw, 1rem);
+            color: var(--text-main);
+            margin: 0;
+            text-shadow: 0 1px 8px rgba(0,0,0,0.6);
         }
 
         /* --- SECTIONS --- */
@@ -72,41 +108,26 @@
             margin-top: 0;
         }
 
-        /* --- CONTENT STYLES --- */
-        .novel-block {
-            padding-left: 25px;
-            margin-bottom: 0;
-        }
-
-        .novel-block .description:first-child {
-            margin-top: 0;
-        }
-        
-        .description {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            color: var(--text-muted);
-        }
-
-        .sample-link {
+        .section-note {
             font-family: var(--font-sans);
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            /* color: var(--accent-color); */
+            font-size: 0.85rem;
+            font-style: italic;
+            color: var(--text-muted);
+            margin: -5px 0 15px 0;
         }
 
-        .publication-list {
+        /* --- CONTENT STYLES --- */
+        .item-list {
             list-style: none;
             margin-top: 0;
+            padding-left: 25px;
         }
 
-        .publication-item {
-            margin-bottom: 20px;
+        .item {
+            margin-bottom: 30px;
         }
 
-        .pub-title {
+        .item-title {
             font-size: 1.4rem;
             font-weight: bold;
             color: #ffffff; /* Bright white for emphasis */
@@ -115,16 +136,49 @@
             border: none;
         }
 
-        .pub-meta {
+        .item-meta {
             font-style: italic;
             margin-top: 0;
             margin-bottom: 6px;
         }
-
-        .publication-item .description {
+        
+        .description {
+            font-size: 1.1rem;
             margin-top: 0;
-            margin-bottom: 0;
+            margin-bottom: 10px;
+            color: var(--text-muted);
         }
+
+        .item-links a {
+            font-family: var(--font-sans);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            margin-right: 20px;
+        }
+
+        /* Responsive 16:9 video embeds */
+        .embed {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            margin: 10px 0 12px 0;
+            background-color: #000;
+        }
+
+        .embed iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Compact list for talks and workshops */
+        .talk-list .item { margin-bottom: 18px; }
+        .talk-list .item-title { font-size: 1.15rem; }
 
         /* --- FOOTER --- */
         footer {
@@ -132,7 +186,7 @@
             padding: 50px 0;
             font-family: var(--font-sans);
             font-size: 0.9rem;
-            color: var(--text-muted); /* Changed from undefined secondary-text */
+            color: var(--text-muted);
             border-top: 1px solid #333; /* Darker border for the dark theme */
             margin-top: 50px;
         }
@@ -141,43 +195,124 @@
         .socials a { margin: 0 10px; font-size: 1.2rem; color: var(--text-muted); border: none; }
         .socials a:hover { color: var(--accent-color); border: none; }
 
+        @media (max-width: 600px) {
+            .item-list { padding-left: 0; }
+        }
+
     </style>
 </head>
 <body>
 
     <header>
-        <img src="live/images/portfolio-image-1.2.png" alt="Christian R Sears - Writing Portfolio">
-        <h1 style="display: none;">Christian Sears - Writing Portfolio</h1>
+        <img src="live/images/header-fall-hike.jpg" alt="Christian hiking through autumn woods with his white dog">
+        <div class="hero-text">
+            <div class="container">
+                <h1>Christian R Sears</h1>
+                <p class="subtitle">Developer Advocate and Dog Owner</p>
+            </div>
+        </div>
     </header>
 
     <div class="gradient-bridge"></div>
 
     <div class="container">
-        
-        <section id="novel">
-            <h2 class="section-header">American Junkie</h2>
-            <div class="novel-block">
-                <p class="description">
-                    Do people ever really change? Can a junkie truly recover from addiction? Most “quit lit” stories are just that—stories about quitting, about sobering up. <em>American Junkie</em> goes deeper. It probes the causes and conditions that lie beneath the wreckage of addiction and the promise of sobriety. Through the eyes of Jack Sutherland, readers will see what it takes to mend a shattered soul.
-                </p>
-                <a href="live/documents/Chains-full.pdf" class="sample-link" style="color: var(--accent-color); font-family: var(--font-sans); font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
-                    Chapter One - Chains &rarr;
-                </a>
-            </div>
+
+        <section id="teaching">
+            <h2 class="section-header">Teaching Agentic Development</h2>
+            <ul class="item-list">
+                <li class="item">
+                    <a href="https://www.youtube.com/watch?v=tZ4JviUx-x4&amp;list=PLBgogxgQVM9sBm7dy-KTntt1yPVNzOZ4H" target="_blank" rel="noopener" class="item-title">Liftoff with Google Antigravity: Build a Video Game with AI</a>
+                    <p class="description">Google's first long-form course on Antigravity. It shows 2,700+ viewers how to get started by building a video game with AI agents.</p>
+                    <div class="embed">
+                        <iframe src="https://www.youtube-nocookie.com/embed/tZ4JviUx-x4?list=PLBgogxgQVM9sBm7dy-KTntt1yPVNzOZ4H" title="Liftoff with Google Antigravity" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="https://www.youtube.com/playlist?list=PLBgogxgQVM9vI32HTCYv-Z8j4BzAwfsf_" target="_blank" rel="noopener" class="item-title">Vibe Coding for Beginners: From Zero to App</a>
+                    <p class="description">A Gemini CLI course that reached 27,000 learners, 10x my team's usual YouTube audience, with no marketing budget.</p>
+                    <div class="embed">
+                        <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLBgogxgQVM9vI32HTCYv-Z8j4BzAwfsf_" title="Vibe Coding for Beginners: From Zero to App" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="https://www.skills.google/focuses/166360" target="_blank" rel="noopener" class="item-title">Troubleshoot an eCommerce Site Using Antigravity CLI</a>
+                    <p class="description">A hands-on lab where learners use the Antigravity CLI to diagnose and fix a broken online store.</p>
+                    <p class="item-links"><a href="https://www.skills.google/focuses/166360" target="_blank" rel="noopener">Open the lab &rarr;</a></p>
+                </li>
+            </ul>
         </section>
 
-        <section id="publications">
-            <h2 class="section-header">Selected Publications</h2>
-            <ul class="publication-list" style="list-style: none;">
-                <li class="publication-item">
-                    <a href="live/documents/Lesson-Learned.pdf" class="pub-title">Lesson learned</a>
-                    <p class="pub-meta" style="font-style: italic;">AA Grapevine - May 2022</p>
-                    <p class="description">What's it like to live as a sober alcoholic in Russia? For me, it was informative. And revealing.</p>
+        <section id="open-source">
+            <h2 class="section-header">Open Source</h2>
+            <ul class="item-list">
+                <li class="item">
+                    <a href="https://nasa.github.io/fprime/" target="_blank" rel="noopener" class="item-title">Navigation bar for NASA's F&prime; documentation</a>
+                    <p class="item-meta">NASA Jet Propulsion Laboratory</p>
+                    <p class="description">The F&prime; docs site had no navigation bar, which made it hard to use. I prototyped one with generative AI, then refined it with JPL engineers until my PRs were merged.</p>
+                    <p class="item-links">
+                        <a href="https://github.com/nasa/fprime/pull/2271" target="_blank" rel="noopener">First PR &rarr;</a>
+                        <a href="https://github.com/fprime-community/fprime-theme/pull/4" target="_blank" rel="noopener">Second PR &rarr;</a>
+                    </p>
                 </li>
-                <li class="publication-item">
-                    <a href="live/documents/globe-letter.pdf" class="pub-title">Why fewer men on campus?</a>
-                    <p class="pub-meta" style="font-style: italic;">The Boston Globe - February 6, 2026</p>
-                    <p class="description">As a grad student at Emerson College, I found that combating injustice had some unintended consequences.</p>
+            </ul>
+        </section>
+
+        <section id="building">
+            <h2 class="section-header">Building with Agents</h2>
+            <ul class="item-list">
+                <li class="item">
+                    <a href="https://gallery-469818.web.app/" target="_blank" rel="noopener" class="item-title">Gallery</a>
+                    <p class="description">A digital scrapbook for physical photos, built with Antigravity. It uses Gemini for photo matching and Firebase for hosting and data storage.</p>
+                    <p class="item-links">
+                        <a href="https://gallery-469818.web.app/" target="_blank" rel="noopener">Live site &rarr;</a>
+                        <a href="https://github.com/Chr1st1anSears/gallery" target="_blank" rel="noopener">Source &rarr;</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="docs">
+            <h2 class="section-header">Developer Education &amp; Docs</h2>
+            <ul class="item-list">
+                <li class="item">
+                    <span class="item-title">Getting started with Red Hat Trusted Application Pipeline</span>
+                    <p class="item-meta">Red Hat</p>
+                    <p class="description">A video onboarding guide that helped 2,200+ developers get up to speed on the RHTAP platform.</p>
+                    <div class="embed">
+                        <iframe src="https://drive.google.com/file/d/17Jg3IK53I6Aht6iqPE9luICqmhji8Aj4/preview" title="Getting started with Red Hat Trusted Application Pipeline" loading="lazy" allow="autoplay" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="https://docs.redhat.com/en/documentation/red_hat_ai_inference_server/3.0/html/getting_started/pr01" target="_blank" rel="noopener" class="item-title">Getting started with Red Hat AI Inference Server</a>
+                    <p class="item-meta">Red Hat</p>
+                    <p class="description">1.0 documentation I led, which helps customers boost the performance of their AI models while reducing costs.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="talks">
+            <h2 class="section-header">Talks &amp; Workshops</h2>
+            <p class="section-note">No recordings available.</p>
+            <ul class="item-list talk-list">
+                <li class="item">
+                    <span class="item-title">Agentic IDE onboarding workshop</span>
+                    <p class="description">Google &middot; Increased adoption of an agentic IDE on my team by 15%.</p>
+                </li>
+                <li class="item">
+                    <span class="item-title">Prompt engineering workshop</span>
+                    <p class="description">Google &middot; Piloted with 3 SWEs, then guided 30+ visiting students to build a video game with Gemini and Apps Script.</p>
+                </li>
+                <li class="item">
+                    <span class="item-title">Getting started with RHTAP</span>
+                    <p class="description">Red Hat &middot; In-person talk that onboarded 50 senior engineers to the platform.</p>
+                </li>
+                <li class="item">
+                    <span class="item-title">RHTAP live demos</span>
+                    <p class="description">Red Hat &middot; Live platform demos for customer development teams.</p>
+                </li>
+                <li class="item">
+                    <span class="item-title">RHCSA enablement: logical volumes</span>
+                    <p class="description">Red Hat &middot; Prepared 30 consultants and solution architects for the Red Hat Certified System Administrator exam.</p>
                 </li>
             </ul>
         </section>
@@ -186,8 +321,9 @@
 
     <footer>
         <div class="socials">
-            <a href="mailto:christiansears@icloud.com" title="Email Me"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/christian-sears-05b039206/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:crsears@google.com" title="Email Me"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/christian-sears-05b039206/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Chr1st1anSears" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
         <p>&copy; 2026 Christian R Sears</p>
     </footer>
